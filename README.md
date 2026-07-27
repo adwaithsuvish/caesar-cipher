@@ -21,7 +21,6 @@ While trivially easy to break by modern standards, understanding the Caesar Ciph
 
 ## ⚠️ Current Limitations
 
-- Only lowercase letters are supported — spaces, punctuation, numbers, and uppercase letters are not handled and will be dropped from the output
 - The shift is fixed at 4 — not currently customizable by the user
 - Encrypt only — no decrypt function yet
 
