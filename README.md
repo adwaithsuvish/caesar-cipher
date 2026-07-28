@@ -28,14 +28,14 @@ While trivially easy to break by modern standards, understanding the Caesar Ciph
 
 ## 🚀 Getting Started
 
-\`\`\`bash
+```bash
 # Clone the repo
 git clone https://github.com/adwaithsuvish/caesar-cipher.git
 cd caesar-cipher
 
 # Run it
 python main.py
-\`\`\`
+```
 
 You'll be prompted to enter text, and the encrypted result will be printed.
 
@@ -43,10 +43,10 @@ You'll be prompted to enter text, and the encrypted result will be printed.
 
 ## 💡 Example
 
-\`\`\`
+```
 Enter the text to encrypt: hello
 Output: lipps
-\`\`\`
+```
 
 ---
 
