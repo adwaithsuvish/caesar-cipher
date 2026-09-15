@@ -44,8 +44,10 @@ You'll be prompted to enter text, and the encrypted result will be printed.
 ## 💡 Example
 
 ```
-Enter the text to encrypt: hello
-Output: lipps
+Enter the choice:1
+Enter the text to encrypt: helloworld
+Enter the shift value: 4
+lippsasvph
 ```
 
 ---
