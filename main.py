@@ -51,3 +51,4 @@ while True:
     if int(a) == 0:
         break
     menu(int(a))
+    a = input("Enter the choice")
