@@ -58,7 +58,7 @@ Output: lipps
 
 ## 🧩 Planned Improvements
 
-- [] Support uppercase letters, spaces, and punctuation
+- [ ] Support uppercase letters, spaces, and punctuation
 - [x] Let the user choose a custom shift value instead of a fixed one
 - [x] Add a decrypt function
 - [ ] Add a brute-force mode to crack messages without knowing the shift
