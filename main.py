@@ -1,17 +1,20 @@
 def menu(a):
-    if a == 1:
-        encrypt()
+    try:
+        if a == 1:
+            encrypt()
+    
+        elif a == 2:
+            shift = int(input("Enter the shift value: "))
+            text = input("Enter the text to decrypt: ")
+            print(decrypt(shift,text))
 
-    elif a == 2:
-        shift = int(input("Enter the shift value: "))
-        text = input("Enter the text to decrypt: ")
-        print(decrypt(shift,text))
+        elif a==3:
+            print(bruteforce())
 
-    elif a==3:
-        print(bruteforce())
-
-    else:
-        print("unknown")
+        else:
+            print("unknown")
+    except ValueError:
+        print("out of range")
         
 def encrypt():
     alpha = 'abcdefghijklmnopqrstuvwxyz'
@@ -59,7 +62,8 @@ def decrypt(shift,text):
 def bruteforce():
     a = input("enter to decrypt:3")
     for i in range(1,27):
-        print(i,decrypt(i,a))
+        l =decrypt(i,a)
+        print(i,l)
 
 a = input("Enter the choice:")
 while True:
