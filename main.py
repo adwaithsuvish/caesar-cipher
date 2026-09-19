@@ -3,7 +3,12 @@ def menu(a):
         encrypt()
 
     elif a == 2:
-        print(decrypt())
+        shift = int(input("Enter the shift value: "))
+        text = input("Enter the text to decrypt: ")
+        print(decrypt(shift,text))
+
+    elif a==3:
+        print(bruteforce())
 
     else:
         print("unknown")
@@ -33,10 +38,9 @@ def encrypt():
 
     print(caesar_cipher(text, caesar))
 
-def decrypt():
+def decrypt(shift,text):
     alpha = 'abcdefghijklmnopqrstuvwxyz'
-    text = input("Enter the text to decrypt: ")
-    shift = int(input("Enter the shift value: "))
+    
     caesar = alpha[(shift ):] + alpha[:(shift)] 
     final=''
     for i in text:
@@ -51,6 +55,11 @@ def decrypt():
                 final += i
                 break
     return final
+
+def bruteforce():
+    a = input("enter to decrypt:3")
+    for i in range(1,27):
+        print(i,decrypt(i,a))
 
 a = input("Enter the choice:")
 while True:
