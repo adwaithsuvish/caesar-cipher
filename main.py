@@ -25,6 +25,9 @@ def encrypt():
                 elif i.isupper() and i.lower() == j:
                     final += caesar[alpha.index(j)].upper()
                     break
+                if i not in caesar:
+                    final += i
+                    break
         return final
 
 
@@ -43,6 +46,9 @@ def decrypt():
                 break
             elif i.isupper() and i.lower() == j:
                 final += alpha[caesar.index(j)].upper()
+                break
+            if i not in alpha:
+                final += i
                 break
     return final
 
