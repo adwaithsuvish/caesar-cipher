@@ -30,10 +30,11 @@ def encrypt():
                 if i == j:
                     final += caesar[alpha.index(j)]
                     break
-                elif i.isupper() and i.lower() == j:
-                    final += caesar[alpha.index(j)].upper()
-                    break
-                if i not in caesar:
+                elif i.lower() in caesar :
+                    if i == j.upper():
+                        final += caesar[alpha.index(j)].upper()
+                        break
+                elif i.lower() not in caesar:
                     final += i
                     break
         return final
@@ -51,10 +52,11 @@ def decrypt(shift,text):
             if i == j:
                 final += alpha[caesar.index(j)]
                 break
-            elif i.isupper() and i.lower() == j:
-                final += alpha[caesar.index(j)].upper()
-                break
-            if i not in alpha:
+            elif i.lower() in alpha:
+                if i == j.upper():
+                    final += alpha[caesar.index(j)].upper()
+                    break
+            elif i.lower() not in alpha:
                 final += i
                 break
     return final
